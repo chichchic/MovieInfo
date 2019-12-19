@@ -14,7 +14,6 @@ class ListViewController: UITableViewController {
     var page = 1
     var list = [MovieVO]()
     @IBOutlet var moreBtn: UIButton!
-    
     @IBAction func more(_ sender: Any) {
         
         self.page += 1
@@ -66,6 +65,19 @@ class ListViewController: UITableViewController {
         }
     }
     
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        let mvo = self.list[index]
+        
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data:imageData)
+            
+            return mvo.thumbnailImage!
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
@@ -81,16 +93,32 @@ class ListViewController: UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-//        let url: URL! = URL(string: row.thumbnail!)
-//        let imageData = try! Data(contentsOf: url)
-//        cell.thumbnail.image = UIImage(data: imageData) //이미지 캐싱 지원(메모리 이슈가 발생할 수 있으나, IO를 하는데 성능을 향상시킬 수 있음. 그러므로 자주 사용하는 이미지의 경우 이 방식을 체택해야함.
-        cell.thumbnail.image = UIImage(data: try! Data(contentsOf: URL(string: row.thumbnail!)!)) //위 3줄을 한 줄로 쓰기
-        
+        DispatchQueue.main.async(execute: {
+            cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
+        })
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+         앱 내 사파리를 통해 url열기
+        
+        let url = URL(string: "https://www.google.com/")
+        UIApplication.shared.open(url!, options: [:])
+        */
+        
         NSLog("선택된 행은 \(indexPath.row) 번째 행입니다.")
+    }
+}
+
+// 화면 전환 시 값을 넘겨주기 위한 세그웨이 관련 처리
+extension ListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_detail" {
+            let path = self.tableView.indexPath(for: sender as! MovieCell)
+            let detailVC = segue.destination as? DetailViewController
+            detailVC?.mvo = self.list[path!.row]
+        }
     }
 }

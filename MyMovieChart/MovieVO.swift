@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MovieVO {
     var thumbnail: String? //thumbnil URL
@@ -15,4 +16,6 @@ class MovieVO {
     var detail: String? // Detail information
     var opendate: String? // Release date
     var rating: Double? // Movie rating
+    
+    var thumbnailImage: UIImage?
 }

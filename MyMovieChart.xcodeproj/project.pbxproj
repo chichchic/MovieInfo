@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535FBBE723AB34A100951958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FBBE623AB34A100951958 /* DetailViewController.swift */; };
 		53F2DBD323A9E46A0007C720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD223A9E46A0007C720 /* AppDelegate.swift */; };
 		53F2DBD523A9E46A0007C720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */; };
 		53F2DBD723A9E46A0007C720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD623A9E46A0007C720 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		535FBBE623AB34A100951958 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		53F2DBCF23A9E46A0007C720 /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F2DBD223A9E46A0007C720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */,
 				53F2DBD623A9E46A0007C720 /* ViewController.swift */,
 				53F2DBD823A9E46A0007C720 /* Main.storyboard */,
+				535FBBE623AB34A100951958 /* DetailViewController.swift */,
 				53F2DBEA23A9FB600007C720 /* MovieCell.swift */,
 				53F2DBE823A9E9A80007C720 /* MovieVO.swift */,
 				53F2DBE623A9E52D0007C720 /* ListViewController.swift */,
@@ -173,6 +176,7 @@
 				53F2DBE723A9E52D0007C720 /* ListViewController.swift in Sources */,
 				53F2DBD523A9E46A0007C720 /* SceneDelegate.swift in Sources */,
 				53F2DBE923A9E9A80007C720 /* MovieVO.swift in Sources */,
+				535FBBE723AB34A100951958 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
