@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		535FBBE723AB34A100951958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FBBE623AB34A100951958 /* DetailViewController.swift */; };
+		53E8C78C23AC8E94005E52E5 /* Trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E8C78A23AC8E94005E52E5 /* Trailer.png */; };
+		53E8C78D23AC8E94005E52E5 /* Listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E8C78B23AC8E94005E52E5 /* Listbullets.png */; };
+		53E8C78F23AC8FD7005E52E5 /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C78E23AC8FD7005E52E5 /* TheaterCell.swift */; };
+		53E8C79123AC90E7005E52E5 /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C79023AC90E7005E52E5 /* TheaterListController.swift */; };
+		53E8C79423AC9A0C005E52E5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8C79323AC9A0C005E52E5 /* MapKit.framework */; };
+		53E8C79623AC9A89005E52E5 /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C79523AC9A89005E52E5 /* TheaterViewController.swift */; };
 		53F2DBD323A9E46A0007C720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD223A9E46A0007C720 /* AppDelegate.swift */; };
 		53F2DBD523A9E46A0007C720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */; };
 		53F2DBD723A9E46A0007C720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2DBD623A9E46A0007C720 /* ViewController.swift */; };
@@ -24,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		535FBBE623AB34A100951958 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		53E8C78A23AC8E94005E52E5 /* Trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailer.png; sourceTree = "<group>"; };
+		53E8C78B23AC8E94005E52E5 /* Listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Listbullets.png; sourceTree = "<group>"; };
+		53E8C78E23AC8FD7005E52E5 /* TheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
+		53E8C79023AC90E7005E52E5 /* TheaterListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
+		53E8C79323AC9A0C005E52E5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		53E8C79523AC9A89005E52E5 /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
 		53F2DBCF23A9E46A0007C720 /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F2DBD223A9E46A0007C720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,18 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E8C79423AC9A0C005E52E5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53E8C79223AC9A0C005E52E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C79323AC9A0C005E52E5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53F2DBC623A9E46A0007C720 = {
 			isa = PBXGroup;
 			children = (
 				53F2DBEC23A9FDC40007C720 /* Resources */,
 				53F2DBD123A9E46A0007C720 /* MyMovieChart */,
 				53F2DBD023A9E46A0007C720 /* Products */,
+				53E8C79223AC9A0C005E52E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +97,9 @@
 				53F2DBD423A9E46A0007C720 /* SceneDelegate.swift */,
 				53F2DBD623A9E46A0007C720 /* ViewController.swift */,
 				53F2DBD823A9E46A0007C720 /* Main.storyboard */,
+				53E8C79523AC9A89005E52E5 /* TheaterViewController.swift */,
+				53E8C79023AC90E7005E52E5 /* TheaterListController.swift */,
+				53E8C78E23AC8FD7005E52E5 /* TheaterCell.swift */,
 				535FBBE623AB34A100951958 /* DetailViewController.swift */,
 				53F2DBEA23A9FB600007C720 /* MovieCell.swift */,
 				53F2DBE823A9E9A80007C720 /* MovieVO.swift */,
@@ -89,6 +114,8 @@
 		53F2DBEC23A9FDC40007C720 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53E8C78B23AC8E94005E52E5 /* Listbullets.png */,
+				53E8C78A23AC8E94005E52E5 /* Trailer.png */,
 				53F2DBED23A9FE1C0007C720 /* darknight.jpg */,
 				53F2DBEF23A9FE1C0007C720 /* rain.jpg */,
 				53F2DBEE23A9FE1C0007C720 /* secret.jpg */,
@@ -155,10 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F2DBF023A9FE1C0007C720 /* darknight.jpg in Resources */,
+				53E8C78D23AC8E94005E52E5 /* Listbullets.png in Resources */,
 				53F2DBF223A9FE1C0007C720 /* rain.jpg in Resources */,
 				53F2DBDF23A9E46A0007C720 /* LaunchScreen.storyboard in Resources */,
 				53F2DBDC23A9E46A0007C720 /* Assets.xcassets in Resources */,
 				53F2DBDA23A9E46A0007C720 /* Main.storyboard in Resources */,
+				53E8C78C23AC8E94005E52E5 /* Trailer.png in Resources */,
 				53F2DBF123A9FE1C0007C720 /* secret.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,11 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F2DBD723A9E46A0007C720 /* ViewController.swift in Sources */,
+				53E8C78F23AC8FD7005E52E5 /* TheaterCell.swift in Sources */,
 				53F2DBD323A9E46A0007C720 /* AppDelegate.swift in Sources */,
 				53F2DBEB23A9FB600007C720 /* MovieCell.swift in Sources */,
 				53F2DBE723A9E52D0007C720 /* ListViewController.swift in Sources */,
+				53E8C79123AC90E7005E52E5 /* TheaterListController.swift in Sources */,
 				53F2DBD523A9E46A0007C720 /* SceneDelegate.swift in Sources */,
 				53F2DBE923A9E9A80007C720 /* MovieVO.swift in Sources */,
+				53E8C79623AC9A89005E52E5 /* TheaterViewController.swift in Sources */,
 				535FBBE723AB34A100951958 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
